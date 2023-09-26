@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/004/572/128/original/invoice-line-icon-logo-illustration-free-vector.jpg"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5 class="m-4">INVOICE GENERATOR</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h6 class="mt-4">INVOICE</h6>
+                <a href="#"><button class="import mt-2">Logo-Click to upload</button></a>
+
+                <div class="row gx-5">
+
+                    <div class="col-lg-6">
+                        <h6 class="mt-4">Bill From</h6>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Company:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. Apple Incorporation">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Address:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. Bennington Street">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Zip:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. 234567">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">City:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. Seattle">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Country:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. USA">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h6 class="mt-4">Bill To</h6>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Company:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. Apple Incorporation">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Address:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. Bennington Street">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Zip:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. 234567">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">City:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. Seattle">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Country:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. USA">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h6 class="custom mt-4"><b>Custom fields</b>&nbsp;<a href="">Add Custom field</a></h6>
+
+                    <div class="col-lg-6 mt-5">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Invoice Number:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e.g. USA">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Issued Date:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Issued Date"
+                                    onfocus="(this.type = 'date')">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="exampleInputEmail1" class="form-label">Due Date:</label>
+                            </div>
+                            <div class="col-lg-7 mb-3">
+                                <input type="text" class="form-control" id="date" aria-describedby="emailHelp"
+                                    placeholder="Due Date" onfocus="(this.type = 'date')">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row m-2 d-none d-sm-block d-md-flex">
+                        <div class="col-lg-5">
+                            <p>Item name</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p>Qty</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p>Rate</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p>Line Total</p>
+                        </div>
+                    </div>
+
+                    <div class="row m-1">
+                        <div class="col-lg-5"><input type="text" class="form-control mb-3" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Sample Item"></div>
+                        <div class="col-lg-2"><input type="text" class="form-control mb-3" id="exampleInputEmail1"
+                                aria-describedby="emailHelp"></div>
+                        <div class="col-lg-2"><input type="text" class="form-control mb-3" id="exampleInputEmail1"
+                                aria-describedby="emailHelp"></div>
+                        <div class="col-lg-2"><input type="text" class="form-control mb-3" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="icon col-lg-1">
+                            <div class="icon1">
+                                <a href=""><i class="fa-solid fa-plus" style="color: #ffff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-1">
+                        <div class="col-lg-5">
+                            <textarea name="" id="" cols="42" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row m-1">
+                        <div class="col-lg-12">
+                            <div class="border1"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row m-1">
+
+                    <div class="col-lg-6">
+                        <h6 class="mt-3">Notes</h6>
+                        <textarea name="" id="" cols="49" rows="10"></textarea>
+                        <h6 class="mt-4">Terms</h6>
+                        <textarea name="" id="" cols="49" rows="10"></textarea>
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="row m-3">
+                            <div class="col-lg-4 col-sm-2">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                </div>
+                                <div>
+                                    <label class="form-check-label mt-2" for="flexSwitchCheckDefault">Discount</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-2">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                </div>
+                                <div>
+                                    <label class="form-check-label mx-2 mt-2" for="flexSwitchCheckDefault">Tax</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-2">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                </div>
+                                <div>
+                                    <label class="form-check-label mt-2" for="flexSwitchCheckDefault">Shipping</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row m-3">
+                            <div class="col-lg-4">
+                                <h6>Sub total</h6>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <p>ALL&nbsp;0</p>
+                            </div>
+                        </div>
+
+                        <div class="row m-3">
+                            <div class="col-lg-4">
+                                <h6>Total total</h6>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4"><b>
+                                    <p>ALL&nbsp;&nbsp;0
+                                </b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="right col-lg-10 p-3 text-center justify-center"><a href="#">+&nbsp;<b>New
+                                Invoice</b></a></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-lg-1"></div>
+                    <div class="right1 col-lg-10 p-3 text-center justify-center"><a href="#"><i
+                                class="fa-solid fa-floppy-disk"></i>&nbsp;Save Invoice</a></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-lg-1"></div>
+                    <div class="right2 col-lg-10 p-3 text-center justify-center"><a href="#"><i
+                                class="fa-solid fa-dollar-sign"></i>&nbsp;Generate PDF Invoice</a></div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-lg-1"></div>
+                    <div class="right2 col-lg-4 p-3 text-center justify-center mt-1"><a href="#">Export</a></div>
+                    <div class="col-lg-2"></div>
+                    <div class="right2 col-lg-4 p-3 text-center justify-center mt-1"><a href="#">Import</a></div>
+                    <div class="col-lg-1"></div>
+                </div>
+
+                <div class="row mt-1">
+                    <div class="col-lg-1"></div>
+                    <div class="right col-lg-10 p-3 text-center justify-center"><a href="#"><i
+                                class="fa-solid fa-circle fa-beat" style="color: skyblue;"></i>&nbsp;Missing a
+                            Feature?</a></div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <h6>Currency</h6>
+                    </div>
+                </div>
+
+                <div class="row mt-1">
+
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">EUR</option>
+                            <option value="2">ALL</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <h6>Saved Invoices</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 p-3 mx-auto text-center">
+                <p>You want to run your business running smoothly, right? Then you must keep your bills updated. A free
+                    invoice generator can be helpful in this situation.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 p-2 mx-auto text-center">
+                <p>This invoice generator is free and privacy-based. Here are the features offered to you:</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 p-2 mx-auto text-left">
+                <li class="ms-4"><b>Define Sender and Recipient:</b>
+                    <p>The invoice generator allows users to input their information as the sender and recipient
+                        effortlessly. All crucial fields are included: Name, Address, City, and Country. If you need
+                        additional information like VAT number, email, etc., you can use custom fields for this.</p>
+                </li>
+                <li class="ms-4"><b>Invoice Date and Due Date:</b>
+                    <p>Users can set the invoice and due dates, ensuring clarity and timeliness in payment expectations.
+                        This function helps with better money management and makes it less likely that payments will be
+                        late (hopefully :).</p>
+                </li>
+                <li class="ms-4"><b>Local Storage and Privacy:</b>
+                    <p>Data privacy is paramount, and this invoice generator addresses this concern by saving the data
+                        in local storage. Users can confidently create and manage invoices, knowing their information is
+                        kept secure.</p>
+                </li>
+                <li class="ms-4"><b>PDF Invoice Generation:</b>
+                    <p>The tool offers the ability to generate professional-looking PDF invoices. I'm currently working
+                        on additional templates for PDFs with different layouts.</p>
+                </li>
+                <li class="ms-4"><b>Import and Export Support:</b>
+                    <p>The tool supports importing and exporting invoices in a simple text file format, making it
+                        convenient to transfer invoice data across platforms or keep backups of essential records.</p>
+                </li>
+                <li class="ms-4"><b>Custom Fields and Notes:</b>
+                    <p>Users can include custom fields like VAT, bank information, and other relevant details.
+                        Additionally, fields for notes and terms allow for clear communication and additional
+                        information in the invoice.</p>
+                </li>
+                <li class="ms-4"><b>Discounts, Taxes, and Shipping Prices:</b>
+                    <p>This invoice generator offers a complete invoicing solution by supporting shipping costs, taxes,
+                        and discounts. Both percentage and amount are supported.</p>
+                </li>
+                <li class="ms-4"><b>Local Save and Load Functionality:</b>
+                    <p>By enabling users to save and load their invoices locally, the solution improves accessibility
+                        and gradually makes effective invoice administration easier.</p>
+                </li>
+                <li class="ms-4"><b>Multi-Currency Support:</b>
+                    <p>I included all world currencies to ensure that users from all over the world can utilize the
+                        tool. Now it's a flexible and universally applicable billing solution.</p>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <h6>Invoice Generator</h6>
+            </div>
+            <div class="col-lg-2">
+                <div class="class">
+                    <p>&copy;2023 by Csaba Kissi</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="social ms-auto">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-baseball"></i></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
